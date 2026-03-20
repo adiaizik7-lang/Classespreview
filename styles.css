@@ -138,3 +138,16 @@ body{
   .hero, .classes-section, .toolbar{width:min(1280px, calc(100% - 18px))}
   .image-label{font-size:1rem}
 }
+
+
+/* Better fit for portrait / tall images */
+.class-card[data-class="musa awakening"] .card-image,
+.class-card[data-class="witch awakening"] .card-image,
+.class-card[data-class="mystic succession"] .card-image{
+  object-fit: contain;
+  object-position: center center;
+  transform: none;
+  background: #0b0813;
+  padding: 10px;
+}
+
