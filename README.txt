@@ -1,6 +1,3 @@
-Upload these files to the root of your GitHub repository:
-- index.html
-- styles.css
-- script.js
-
-All class and guide images are embedded directly in script.js, so there is no images folder.
+Upload all files from this zip to your GitHub repo root.
+This version embeds the three corrected images directly into script.js.
+No images folder is needed.
