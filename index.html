@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIOLETBOT | Class Hub</title>
+  <meta name="description" content="VIOLETBOT class hub for selected Black Desert classes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand">
+        <span class="brand-mark">V</span>
+        <div>
+          <strong>VIOLETBOT</strong>
+          <small>Selected Class Hub</small>
+        </div>
+      </div>
+      <a class="btn btn-ghost" href="#classes">Browse Classes</a>
+    </nav>
+
+    <section class="hero-content">
+      <div class="hero-copy">
+        <span class="eyebrow">BLACK DESERT PRIVATE TEST SERVER UI</span>
+        <h1>Selected classes only.</h1>
+        <p>
+          Updated version with only the classes from your screenshot.
+          Every card now uses a real image when provided, and the skill setup is just plain editable text.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#classes">Open Class Grid</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="panel-card">
+          <span class="panel-label">UPDATED BUILD</span>
+          <h2>18 classes</h2>
+          <p>Only the classes you asked for are shown here.</p>
+          <ul>
+            <li>Real class images where supplied</li>
+            <li>Class name shown on image</li>
+            <li>Plain text skill setup editor</li>
+            <li>Still easy to upload anywhere</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="toolbar">
+      <div class="toolbar-inner">
+        <input id="searchInput" type="search" placeholder="Search class..." aria-label="Search class" />
+        <div class="counter"><span id="visibleCount">18</span> classes shown</div>
+      </div>
+    </section>
+
+    <section class="classes-section" id="classes">
+      <div class="section-heading">
+        <span class="eyebrow">CLASS LIBRARY</span>
+        <h2>Choose your class</h2>
+        <p>Click Download or open Skill Setup to edit the text later.</p>
+      </div>
+
+      <div class="class-grid" id="classGrid">
+
+        <article class="class-card" data-class="guardian awakening">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/guardian-awakening.jpg" alt="Guardian Awakening" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Guardian Awakening</div>
+          </div>
+          <div class="card-body">
+            <h3>Guardian Awakening</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/guardian-awakening.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Guardian Awakening">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="guardian succession">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/guardian-succession.jpg" alt="Guardian Succession" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Guardian Succession</div>
+          </div>
+          <div class="card-body">
+            <h3>Guardian Succession</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/guardian-succession.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Guardian Succession">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="hashashin awakening">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/hashashin-awakening.jpg" alt="Hashashin Awakening" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Hashashin Awakening</div>
+          </div>
+          <div class="card-body">
+            <h3>Hashashin Awakening</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/hashashin-awakening.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Hashashin Awakening">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="warrior awakening">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/warrior-awakening.jpg" alt="Warrior Awakening" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Warrior Awakening</div>
+          </div>
+          <div class="card-body">
+            <h3>Warrior Awakening</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/warrior-awakening.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Warrior Awakening">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="witch awakening">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/witch-awakening.jpg" alt="Witch Awakening" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Witch Awakening</div>
+          </div>
+          <div class="card-body">
+            <h3>Witch Awakening</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/witch-awakening.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Witch Awakening">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="wizard awakening">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/wizard-awakening.jpg" alt="Wizard Awakening" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Wizard Awakening</div>
+          </div>
+          <div class="card-body">
+            <h3>Wizard Awakening</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/wizard-awakening.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Wizard Awakening">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="maegu succession">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/maegu-succession.jpg" alt="Maegu Succession" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Maegu Succession</div>
+          </div>
+          <div class="card-body">
+            <h3>Maegu Succession</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/maegu-succession.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Maegu Succession">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="mystic awakening">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/mystic-awakening.jpg" alt="Mystic Awakening" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Mystic Awakening</div>
+          </div>
+          <div class="card-body">
+            <h3>Mystic Awakening</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/mystic-awakening.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Mystic Awakening">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="mystic succession">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/mystic-succession.jpg" alt="Mystic Succession" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Mystic Succession</div>
+          </div>
+          <div class="card-body">
+            <h3>Mystic Succession</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/mystic-succession.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Mystic Succession">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="musa awakening">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/musa-awakening.jpg" alt="Musa Awakening" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Musa Awakening</div>
+          </div>
+          <div class="card-body">
+            <h3>Musa Awakening</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/musa-awakening.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Musa Awakening">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="dosa awakening">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/dosa-awakening.jpg" alt="Dosa Awakening" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Dosa Awakening</div>
+          </div>
+          <div class="card-body">
+            <h3>Dosa Awakening</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/dosa-awakening.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Dosa Awakening">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="lahn awakening">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/lahn-awakening.jpg" alt="Lahn Awakening" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Lahn Awakening</div>
+          </div>
+          <div class="card-body">
+            <h3>Lahn Awakening</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/lahn-awakening.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Lahn Awakening">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="scholar">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/scholar.jpg" alt="Scholar" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Scholar</div>
+          </div>
+          <div class="card-body">
+            <h3>Scholar</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/scholar.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Scholar">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="striker awakening">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/striker-awakening.jpg" alt="Striker Awakening" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Striker Awakening</div>
+          </div>
+          <div class="card-body">
+            <h3>Striker Awakening</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/striker-awakening.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Striker Awakening">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="striker succession">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/striker-succession.jpg" alt="Striker Succession" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Striker Succession</div>
+          </div>
+          <div class="card-body">
+            <h3>Striker Succession</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/striker-succession.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Striker Succession">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="shai">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/shai.jpg" alt="Shai" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Shai</div>
+          </div>
+          <div class="card-body">
+            <h3>Shai</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/shai.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Shai">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="wukong">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/wukong.jpg" alt="Wukong" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Wukong</div>
+          </div>
+          <div class="card-body">
+            <h3>Wukong</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/wukong.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Wukong">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="class-card" data-class="ninja succession">
+          <div class="card-image-wrap">
+            <img class="card-image" src="images/ninja-succession.jpg" alt="Ninja Succession" loading="lazy" />
+            <div class="image-overlay"></div>
+            <div class="image-label">Ninja Succession</div>
+          </div>
+          <div class="card-body">
+            <h3>Ninja Succession</h3>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="downloads/ninja-succession.zip" download>Download</a>
+              <button class="btn btn-secondary setup-btn" data-class="Ninja Succession">Skill Setup</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="setup-modal" id="setupModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow">PLAIN TEXT</span>
+          <h3 id="modalTitle">Skill Setup</h3>
+        </div>
+        <button class="icon-close" id="closeModal" aria-label="Close">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <textarea id="setupText" rows="18" spellcheck="false"></textarea>
+        <div class="modal-actions">
+          <button class="btn btn-primary" id="downloadTextBtn">Download TXT</button>
+          <button class="btn btn-secondary" id="clearTextBtn">Clear</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    window.CLASS_SETUP_TEMPLATES = {
+  "Guardian Awakening": "Guardian Awakening\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Guardian Succession": "Guardian Succession\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Hashashin Awakening": "Hashashin Awakening\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Warrior Awakening": "Warrior Awakening\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Witch Awakening": "Witch Awakening\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Wizard Awakening": "Wizard Awakening\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Maegu Succession": "Maegu Succession\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Mystic Awakening": "Mystic Awakening\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Mystic Succession": "Mystic Succession\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Musa Awakening": "Musa Awakening\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Dosa Awakening": "Dosa Awakening\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Lahn Awakening": "Lahn Awakening\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Scholar": "Scholar\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Striker Awakening": "Striker Awakening\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Striker Succession": "Striker Succession\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Shai": "Shai\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Wukong": "Wukong\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n",
+  "Ninja Succession": "Ninja Succession\\n\\n- Skill 1:\\n- Skill 2:\\n- Skill 3:\\n\\nNotes:\\n"
+};
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
