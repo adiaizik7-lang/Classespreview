@@ -8,22 +8,14 @@
 </head>
 <body>
   <section class="hero">
-    <div class="kicker">VioletBot</div>
+    <div class="kicker">VIOLETBOT</div>
     <div class="hero-grid">
       <div>
         <h1>VioletBot Class database</h1>
         <p>Only Classes shown here are supported<br>Class database<br>Constantly Updated<br>Guides included.</p>
       </div>
-      <div class="hero-badge">
-        <div style="font-weight:900;font-size:20px;margin-bottom:10px;color:#fff;">Supported classes</div>
-        <div class="hero-list">
-          <div>18 classes</div>
-          <div>Real class images</div>
-          <div>Big guide images</div>
-          <div>Download links wired</div>
-          <div>Skill lock sections</div>
-          <div>Local notes uploader</div>
-        </div>
+      <div class="hero-badge hero-badge-animated">
+        <div class="hero-big-animated">18 Classes supported</div>
       </div>
     </div>
   </section>
@@ -40,7 +32,7 @@
           <h2 class="modal-title" id="modalTitle"></h2>
           <div class="modal-note" id="modalNote"></div>
         </div>
-        <button class="close-btn" id="closeModal">Close</button>
+        <button class="close-btn" id="closeGuideModal">Close</button>
       </div>
       <div class="guide-layout">
         <div>
@@ -62,6 +54,16 @@
         </div>
         <div class="image-stack" id="guideSections"></div>
       </div>
+    </div>
+  </div>
+
+  <div class="modal" id="addonModal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <div><h2 class="modal-title" id="addonTitle"></h2></div>
+        <button class="close-btn" id="closeAddonModal">Close</button>
+      </div>
+      <div class="image-stack" id="addonSections"></div>
     </div>
   </div>
 
