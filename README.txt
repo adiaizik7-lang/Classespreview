@@ -1,5 +1,6 @@
-Upload these files to the root of your GitHub repo:
+Upload these files to the root of your GitHub repository:
 - index.html
 - styles.css
 - script.js
-Everything is embedded in the files, so no images folder is required.
+
+All class and guide images are embedded directly in script.js, so there is no images folder.

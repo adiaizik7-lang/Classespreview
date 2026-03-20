@@ -4,78 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VioletBot Class database</title>
-  <meta name="description" content="Updated version database of supported bot classes with guides of VioletBot." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-orb orb-a"></div>
-  <div class="bg-orb orb-b"></div>
-  <div class="shell">
-    <header class="hero">
-      <div class="hero-copy">
-        <div class="eyebrow">VioletBot</div>
+  <section class="hero">
+    <div class="kicker">VioletBot</div>
+    <div class="hero-grid">
+      <div>
         <h1>VioletBot Class database</h1>
-        <div class="hero-points">
-          <span>Only Classes shown here are supported</span>
-          <span>Class database</span>
-          <span>Constantly Updated</span>
-          <span>Guides included.</span>
+        <p>Only Classes shown here are supported<br>Class database<br>Constantly Updated<br>Guides included.</p>
+      </div>
+      <div class="hero-badge">
+        <div style="font-weight:900;font-size:20px;margin-bottom:10px;color:#fff;">Supported classes</div>
+        <div class="hero-list">
+          <div>18 classes</div>
+          <div>Real class images</div>
+          <div>Big guide images</div>
+          <div>Download links wired</div>
+          <div>Skill lock sections</div>
+          <div>Local notes uploader</div>
         </div>
-        <p class="hero-subtitle">Updated version database of supported bot classes with guides of VioletBot.</p>
-        <p class="hero-note">Download or open skill setup for guidance</p>
       </div>
-      <div class="hero-stat">
-        <div class="stat-value">18</div>
-        <div class="stat-label">Supported classes</div>
-      </div>
-    </header>
+    </div>
+  </section>
 
-    <section class="toolbar">
-      <input id="searchInput" type="text" placeholder="Search class..." />
-      <div class="toolbar-text"><span id="visibleCount">18</span> classes visible</div>
-    </section>
+  <div class="subline">Updated version database of supported bot classes with guides of VioletBot.</div>
+  <div class="subline" style="font-size:16px;opacity:.95;">Download or open skill setup for guidance</div>
 
-    <main>
-      <section id="cardGrid" class="card-grid"></section>
-    </main>
-  </div>
+  <main class="grid" id="classGrid"></main>
 
-  <div id="setupModal" class="modal hidden" aria-hidden="true">
-    <div class="modal-backdrop" data-close="true"></div>
-    <div class="modal-dialog">
-      <button id="closeModal" class="icon-close" aria-label="Close">×</button>
+  <div class="modal" id="guideModal" aria-hidden="true">
+    <div class="modal-panel">
       <div class="modal-head">
         <div>
-          <div class="eyebrow">Skill Setup</div>
-          <h2 id="modalTitle">Class</h2>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <div class="modal-note" id="modalNote"></div>
         </div>
-        <a id="modalDownload" class="download-link" href="#" target="_blank" rel="noopener">Open download</a>
+        <button class="close-btn" id="closeModal">Close</button>
       </div>
-
-      <div class="modal-grid">
-        <section class="panel">
-          <h3>Public guide</h3>
-          <div id="publicGuide" class="public-guide"></div>
-        </section>
-
-        <section class="panel">
-          <h3>Your local notes</h3>
-          <p class="panel-note">These notes and uploads save only in your browser on this device.</p>
-          <textarea id="personalNotes" placeholder="Write private notes here..."></textarea>
-          <div class="action-row">
-            <button id="saveNotesBtn" class="btn btn-primary" type="button">Save notes</button>
-            <button id="clearNotesBtn" class="btn btn-secondary" type="button">Clear notes</button>
+      <div class="guide-layout">
+        <div>
+          <div class="guide-text-wrap">
+            <h3>Guide</h3>
+            <div class="guide-text" id="guideText"></div>
           </div>
-
-          <div class="upload-box">
-            <label for="guideUpload" class="upload-label">Add local images</label>
-            <input id="guideUpload" type="file" accept="image/*" multiple />
-            <div id="localGallery" class="local-gallery"></div>
+          <div class="local-wrap" style="margin-top:18px;">
+            <h3>Your local notes</h3>
+            <textarea id="localNotes" placeholder="Write private notes here..."></textarea>
+            <div class="local-tools">
+              <input type="file" id="localImageInput" accept="image/*" multiple />
+              <button class="btn btn-primary" id="saveLocal">Save</button>
+              <button class="btn btn-secondary" id="clearLocal">Clear</button>
+            </div>
+            <div class="small">These notes and uploaded images stay only in your browser on this device.</div>
+            <div class="preview-list" id="localPreview"></div>
           </div>
-        </section>
+        </div>
+        <div class="image-stack" id="guideSections"></div>
       </div>
     </div>
   </div>
