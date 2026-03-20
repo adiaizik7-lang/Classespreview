@@ -98,7 +98,7 @@ h1{margin:0 0 14px;font-size:clamp(2rem,3vw,3.3rem);line-height:1.02}
 .modal{position:fixed;inset:0;z-index:40}
 .modal-backdrop{position:absolute;inset:0;background:rgba(5,3,12,.72);backdrop-filter:blur(8px)}
 .modal-dialog{
-  position:relative; z-index:1; width:min(1180px,calc(100% - 28px)); max-height:calc(100vh - 28px); overflow:auto;
+  position:relative; z-index:1; width:min(1380px,calc(100% - 28px)); max-height:calc(100vh - 28px); overflow:auto;
   margin:14px auto; padding:22px; border-radius:28px; background:linear-gradient(180deg,#120b22,#0b0714);
   border:1px solid rgba(255,255,255,.1); box-shadow:var(--shadow);
 }
@@ -111,11 +111,11 @@ h1{margin:0 0 14px;font-size:clamp(2rem,3vw,3.3rem);line-height:1.02}
 .download-link{
   color:white;text-decoration:none;background:linear-gradient(135deg,var(--accent-2),var(--accent));padding:12px 16px;border-radius:14px;font-weight:700;white-space:nowrap
 }
-.modal-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}
+.modal-grid{display:grid;grid-template-columns:1fr;gap:18px}
 .panel{
   background:var(--panel); border:1px solid var(--line); border-radius:22px; padding:18px;
 }
-.panel h3{margin:0 0 10px}
+.panel h3{margin:0 0 10px;color:#ffffff}
 .panel-note{margin:0 0 12px;color:var(--muted);font-size:.95rem}
 .public-guide p{margin:0 0 12px;line-height:1.65;color:#f4efff}
 .public-guide img{
@@ -147,4 +147,35 @@ input[type="file"]{display:block;width:100%;color:var(--muted)}
   .toolbar{flex-direction:column;align-items:stretch}
   .card-grid{grid-template-columns:1fr}
   .hero-points span{width:100%;justify-content:center}
+}
+
+
+.guide-copy p,.guide-copy li,.guide-subtitle,.public-guide h4,.public-guide strong,.public-guide figcaption{
+  color:#ffffff !important;
+}
+.public-guide p{
+  color:#ffffff;
+  font-size:1rem;
+}
+.guide-gallery{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:20px;
+}
+.guide-gallery figure{
+  margin:0;
+}
+.public-guide img{
+  width:100%;
+  max-width:100%;
+  height:auto;
+  display:block;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.12);
+  background:#05050a;
+}
+@media (min-width: 1100px){
+  .public-guide img{
+    max-height:none;
+  }
 }

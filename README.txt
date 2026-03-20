@@ -1,8 +1,5 @@
-VioletBot GitHub-ready build
-
-Upload all of these files to the root of your GitHub repository:
+Upload these files to the root of your GitHub repo:
 - index.html
 - styles.css
 - script.js
-
-This build uses embedded images, so no /images folder is needed.
+Everything is embedded in the files, so no images folder is required.
